@@ -1,0 +1,123 @@
+.get_touch_back{
+    width: 100%; float: left; position: relative; padding: 9.4rem 0 8.3rem;
+    img.avator{
+        width: 100%; height: 100%; position: absolute; top: 0; left: 0; object-fit: cover; object-position: right top; 
+    }
+    h2{
+        color: #ccbd99; font-size: 4.3rem; text-transform: capitalize; margin-bottom: 2.5rem; line-height: 8.3rem; padding-left: 7.8rem; position: relative;
+        &::before{
+            width: 6rem; height: 1px; background-color: #ccbd99; position: absolute; left: 0; top: 3.4rem; content: "";
+        }
+    }
+
+    .form_back{
+        width: 100%; height: auto; float: left; position: relative;
+        .portion{
+            width: 100%; float: left; margin-bottom: 2.3rem;
+            .input{
+                width: 100%; height: 4.8rem; background-color: transparent; color: #a6a6a6; padding: 0 2rem 0 5px; border: none; border-bottom: #969696 1px solid; outline-style: none; font-size: 1.5rem;
+                ::placeholder{
+                    color: #a6a6a6;
+                }
+                &.textarea{
+                    height: 6.5rem; padding: 2rem 2rem 2rem 5px; resize: none;
+                }
+            }
+        }
+        .custom_button{
+            margin-top: 3rem;
+            a{
+                line-height: 5.6rem; color: #fff; border-color:#fff ; width: 23.8rem; background-color: transparent; border: #fff 2px solid; line-height: 5.6rem;
+               span{
+                   background-color: #fff; background-image: url(../images/b1-icon.png);
+               }
+               .submit{
+                   width: 100%; height: 100%; background-color: transparent; border: none; cursor: pointer; position: absolute; top: 0; left: 0; text-align: left;     padding-left: 8.4rem; font-size: 1.3rem; color: #fff; text-decoration: none; outline-style: none; text-transform: uppercase; cursor: pointer;
+               }
+           }
+           img{
+               filter: brightness(0) invert(1);
+           }
+        }
+    }
+    &.contact{
+        h2{
+            color: #373737;
+        }
+        .custom_button{
+            margin-top: 3rem;
+            a{
+                line-height: 5.6rem;  color: #404040; border-color:#fff ; width: 23.8rem; background-color: #ccbd99; line-height: 5.6rem;
+               span{
+                    background-color: #404040; background-image: url(../images/b-icon.png); 
+               }
+               .submit{
+                   width: 100%; height: 100%; background-color: transparent; border: none; cursor: pointer; position: absolute; top: 0; left: 0; text-align: left;     padding-left: 8.4rem; font-size: 1.3rem; color: #fff; text-decoration: none; outline-style: none; text-transform: uppercase; cursor: pointer;
+               }
+           }
+           img{
+               filter: brightness(0) invert(1);
+           }
+        }
+    }
+}
+
+.map{
+    width: 100%; height: 50rem; position: relative; margin-top: 6rem;
+    iframe{
+        width: 100%; height: 100%; position: absolute; top: 0; left: 0;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .services_back {
+        .portion {
+            .custom_button{
+                a{
+                    width: 25rem;
+                }
+            }
+        }
+    }
+}
+
+.contact_details{
+    width: 100%; float: left;
+    .portion{
+        width: 100%; height: auto; background-color: #fff;  padding: 0; margin-bottom: 3rem; padding-left: 6rem; position: relative;
+        .image_back{
+             display: block; position: absolute; top: .7rem; left: 0; text-align: center; width: 6rem; height: 100%; 
+            img{
+                display: inline-block; height: 3rem;
+            }
+        }
+        h3{
+            font-size: 2rem; color: #291402; text-transform: capitalize; margin-bottom: 0;
+        }
+        p{
+            font-size: 1.6rem; color: #757575; line-height: 4.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width:1023px){
+    .contact_details{
+        .portion{
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .contact_details{
+        .portion{
+            text-align: center; height: auto; padding-bottom: 2.6rem;
+            .image_back{
+                min-height: 1px;
+                img{
+                    height: 6rem;
+                }
+            }
+        }
+    }
+}

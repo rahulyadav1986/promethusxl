@@ -1,0 +1,53 @@
+.gallery_back{
+    width: 100%; float: left; display: grid; grid-gap: 3rem; grid-template-columns: repeat(3, 1fr);
+    .portion{
+        &:hover{
+            .overlay{
+                opacity: 1;
+            }
+            
+        }
+        width: 100%; height: 32rem; position: relative;
+        img{
+            width: 100%; height: 100%; position: absolute; top: 0; left: 0; object-fit: cover;
+        }
+        .overlay{
+            width: 90%;
+            height: 86%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            right: 0;
+            border: rgba(0,0,0,.3) 1px solid;
+            box-shadow: rgba(0,0,0,.5) 1px 0 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: all .3s ease-in;
+            h3{
+                color: #fff; font-size: 2.4rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1023px){
+    .gallery_back{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media only screen and (max-width:500px){
+    .gallery_back{
+        grid-template-columns: repeat(1, 1fr);
+        .portion{
+            height: auto;
+            img{
+                position: relative;
+            }
+        }
+
+    }
+}

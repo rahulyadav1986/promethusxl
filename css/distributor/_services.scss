@@ -1,0 +1,56 @@
+.services_back{
+    width: 100%; float: left; text-align: center; padding: 8.6rem 0 5.6rem;
+    &.single{
+        text-align: left;
+        .portion{
+            box-shadow: none;
+            h3{
+              &:before{
+                  right: auto;
+              }
+              &:after{
+                right: auto;
+              } 
+            }
+        }
+    }
+    h2{
+        color: #373737; font-size: 4.3rem; text-transform: capitalize; margin-bottom: 3rem; line-height: 8.3rem; padding: 0 9.4rem; position: relative;     display: inline-block;
+        &::before{
+            width: 6rem; height: 1px; background-color: #928d98; position: absolute; left: 0; top: 3.8rem; content: "";
+        }
+        &::after{
+            width: 6rem; height: 1px; background-color: #928d98; position: absolute; right: 0; top: 3.8rem; content: "";
+        } 
+    }
+    .portion{
+        width: 100%; float: left; box-shadow: rgba(0,0,0,.35) 0 0 14px; margin-bottom: 3rem;
+        img{
+            width: 100%; height: auto; object-fit: cover;  margin-bottom: 4rem;
+        }
+        h3{
+            font-size: 2.6rem; color: #373737; padding-bottom: 3.4rem; text-transform: capitalize; margin-bottom: 4rem; position: relative; 
+            &:before{
+                width: 9rem; height: 1px; background-color: #928d98; position: absolute; left: 0; right: 0; bottom: 0; margin: auto; content: "";
+            }
+            &:after{
+                width: 9rem; height: 1px; background-color: #928d98; position: absolute; left: 0; right: 0; bottom: 4px; margin: auto; content: "";
+            }
+        }
+        p{
+            font-size: 1.9rem; color: #575757; line-height: 3.6rem; margin-bottom: 3rem; width: 85%; display: inline-block;
+        }
+        .custom_button{     
+            margin-bottom: 4rem;       
+            a{
+               width:21.3rem; background-color: transparent; color: #ccbd99; border: #ccbd99 2px solid; text-align: left; line-height: 5.6rem;
+                span{
+                    background-color: #ccbd99;
+                }
+            }
+            img{
+                width: auto; height: 12px; object-fit: none; margin: auto;
+            }
+        }
+    }
+}
